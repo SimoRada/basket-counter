@@ -17,6 +17,7 @@ function miss(){
 }
 function save(){
     stats = (count / total) * 100
+    stats = stats.toFixed(2); // Limita a due decimali
     let countStr = count + "/" + total  + "(" + stats + "%) <br>" 
     saveEl.innerHTML += countStr 
     //innerText vs textContent, look Modzilla
