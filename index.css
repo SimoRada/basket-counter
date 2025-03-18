@@ -51,11 +51,28 @@ h2 {
     background-color: green;
 }
 
+#increment-btn:active {
+    background-color: darkgreen !important; /* Forza il ritorno al colore originale quando cliccato */
+}
+
+#increment-btn:focus {
+    outline: none; /* Rimuove il bordo di focus */
+    background-color: darkgreen !important; /* Forza il ritorno al colore originale */
+}
 #miss-btn {
     background-color: darkred;
 }
 #miss-btn:hover {
-    background-color:red;
+    background-color: red;
+}
+
+#miss-btn:active {
+    background-color: darkred !important; /* Forza il ritorno al colore originale quando cliccato */
+}
+
+#miss-btn:focus {
+    outline: none; /* Rimuove il bordo di focus */
+    background-color: darkred !important; /* Forza il ritorno al colore originale */
 }
 
 .bottom-button {
@@ -76,14 +93,27 @@ h2 {
 }
 
 #save-btn:hover {
-    background-color: #003366;
+    background-color: blue;
 }
+
+#save-btn:active {
+    background-color: darkblue !important; /* Forza il ritorno al colore originale quando cliccato */
+}
+
+#save-btn:focus {
+    background-color: darkblue !important; /* Forza il ritorno al colore originale anche quando è a fuoco */
+    outline: none; /* Rimuove il bordo di focus */
+}
+
 
 #save-el {
     font-size: 24px;
     margin-top: 20px;
     max-height: 200px;
     overflow-y: auto;
+}
+#increment-btn:focus, #miss-btn:focus, #save-btn:focus {
+    outline: none; /* Rimuove l'outline del focus, se necessario */
 }
 
 @media screen and (max-width: 480px) {
