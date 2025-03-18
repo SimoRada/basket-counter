@@ -118,31 +118,33 @@ h2 {
 
 @media screen and (max-width: 480px) {
     h1 {
-        font-size: 32px;
+        font-size: 50px;  /* Aumento significativo */
+        border: 3px solid red; /* Temporaneo per vedere se la regola viene applicata */
     }
 
     h2 {
-        font-size: 50px;
+        font-size: 80px;  /* Ancora più grande per una visibilità eccellente */
     }
 
     .top-buttons {
         flex-direction: column;
-        gap: 15px;
+        gap: 30px;  /* Maggiore distanza tra i bottoni */
     }
 
     .half {
         width: 100%;
-        padding: 22px;
-        font-size: 26px;
+        padding: 40px;  /* Ingrandito per maggiore cliccabilità */
+        font-size: 50px;  /* Enorme per un bel contrasto */
     }
 
     #save-btn {
+        background-color: red;
         width: 100%;
-        padding: 20px 30px; /* Riduci il padding per il mobile */
-        font-size: 26px;
+        padding: 50px 60px;  /* Ingrandito ulteriormente */
+        font-size: 50px;  /* Veramente grande per il bottone */
     }
 
     #save-el {
-        font-size: 22px;
+        font-size: 36px;  /* Grande per il testo delle statistiche */
     }
 }
