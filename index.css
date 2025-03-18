@@ -11,25 +11,25 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 h1 {
-    margin-top: 10px;
-    margin-bottom: 5px;
-    font-size: 28px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 36px; /* Più grande */
 }
 
 h2 {
-    font-size: 48px;
+    font-size: 60px; /* Più grande */
     margin-top: 0;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 .top-buttons {
     display: flex;
     width: 90%;
-    max-width: 500px;
+    max-width: 600px; /* Più grande */
     gap: 15px;
 }
 
@@ -37,10 +37,10 @@ h2 {
     flex: 1;
     border: none;
     cursor: pointer;
-    padding: 20px;
-    font-size: 22px;
+    padding: 25px; /* Più grande */
+    font-size: 28px; /* Più grande */
     color: white;
-    border-radius: 10px;
+    border-radius: 12px;
 }
 
 #increment-btn {
@@ -52,43 +52,52 @@ h2 {
 }
 
 .bottom-button {
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 #save-btn {
     background: darkblue;
     width: 90%;
-    max-width: 250px;
-    padding: 20px;
-    font-size: 22px;
+    max-width: 300px; /* Più grande */
+    padding: 25px; /* Più grande */
+    font-size: 28px; /* Più grande */
     color: white;
-    border-radius: 10px;
+    border-radius: 12px;
+}
+
+#save-el {
+    font-size: 24px; /* Più grande */
+    margin-top: 20px;
 }
 
 /* Media query per schermi più piccoli */
 @media screen and (max-width: 480px) {
     h1 {
-        font-size: 24px;
+        font-size: 32px; /* Ancora più grande */
     }
 
     h2 {
-        font-size: 40px;
+        font-size: 50px; /* Ancora più grande */
     }
 
     .top-buttons {
         flex-direction: column;
-        gap: 10px;
+        gap: 15px;
     }
 
     .half {
         width: 100%;
-        padding: 18px;
-        font-size: 20px;
+        padding: 22px;
+        font-size: 26px;
     }
 
     #save-btn {
         width: 100%;
-        padding: 18px;
-        font-size: 20px;
+        padding: 22px;
+        font-size: 26px;
+    }
+
+    #save-el {
+        font-size: 22px;
     }
 }
